@@ -1,4 +1,7 @@
+using ApiProjeKampi.WebApi.Context;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ApiContext>();//apicontext sınıfını constructor olarak kullanıyorum demek
 
 // Add services to the container.
 
